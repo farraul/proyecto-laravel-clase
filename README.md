@@ -8,13 +8,22 @@
 </p>
 
 
-### CRUD Login y Register
+## Para el desarrollo de la API en Laravel hemos utilizado:
+
+● SQL
+
+● PHP (Laravel)
+
+● laravel/passport
+
+## Crud
+### Login y Register
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
 | Registrarse   |POST    | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/newUser    |
 | LOgin  | POST  | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/loginUser    | 
 
-### CRUD Usuarios
+### Usuarios
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
 | Añadir usuario:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario     |
@@ -23,7 +32,7 @@
 | Borrar usuario por ID  | DELETE   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     | 
 | Actualizar usuario por ID  | PUT   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     | 
 
-### CRUD Mensajes
+###  Mensajes
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
 | Añadir mensaje:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Mensaje    |
@@ -31,7 +40,7 @@
 | Buscar mensaje por ID   | GET   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     |
 | Borrar mensaje por ID  | DELETE   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     | 
 
-### CRUD Juegos
+###  Juegos
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
 | Añadir juego:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game  |
@@ -40,7 +49,7 @@
 | Borrar juego por ID  | DELETE   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game/11     | 
 | Actualizar juego por ID  | PUT   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game/11    | 
 
-### CRUD Partida
+###  Partida
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
 | Añadir juego:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Party  |
@@ -54,4 +63,8 @@
 ## TABLAS
 
 ![image](https://user-images.githubusercontent.com/28491001/146386220-4cc04913-34a5-4ef2-99e0-4db6d4531040.png)
+
+HEROKU
+La API la tenemos en el siguiente enlace:
+https://r-f-geeks-laravel-and-passport.herokuapp.com
 
