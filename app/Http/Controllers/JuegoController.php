@@ -3,13 +3,13 @@
 namespace App\Http\Controllers;
 use Illuminate\Database\QueryException;
 use Illuminate\Http\Request;
-use App\Models\Juego;
+use App\Models\Game;
 
-class JuegoController extends Controller
+class GameController extends Controller
 
 {
-    //CREAR JUEGOS//
-    public function createJuego (Request $request){
+    //CREAR GameS//
+    public function createGame (Request $request){
 
         $nombre = $request->input('nombre');
         $compania = $request->input('compania');
@@ -18,7 +18,7 @@ class JuegoController extends Controller
 
         try {
 
-            return Juego::create(
+            return Game::create(
                 [
                     'nombre' => $nombre,
                     'compania' => $compania,
@@ -37,14 +37,14 @@ class JuegoController extends Controller
            
         }
     }
-    //BUSCAR JUEGOS POR ID//
-    public function showJuegoByID($id){
+    //BUSCAR GameS POR ID//
+    public function showGameByID($id){
 
 
         try {
-            $Juego = Juego::all()
+            $Game = Game::all()
             ->where('id', "=", $id);
-            return $Juego;
+            return $Game;
 
         } catch (QueryException $error) {
 
@@ -56,20 +56,20 @@ class JuegoController extends Controller
         
     }
     
-        //VER TODOS LOS JUEGOS//
-        public function showAllJuego(){
+        //VER TODOS LOS GameS//
+        public function showAllGame(){
     
             try {
                 
-            return Juego::all();
+            return Game::all();
     
             } catch(QueryException $error) {
                 return $error;
             }
         }
 
-        //ACTUALIZAR JUEGOS//
-        public function updateJuego (Request $request,$id){
+        //ACTUALIZAR GameS//
+        public function updateGame (Request $request,$id){
 
            
             
@@ -81,7 +81,7 @@ class JuegoController extends Controller
     
             try {
              
-                $Juego = Juego::where('id', '=', $id)
+                $Game = Game::where('id', '=', $id)
                 ->update(
                     [
                         'nombre' => $nombre,
@@ -90,7 +90,7 @@ class JuegoController extends Controller
                        
                     ]
                     );
-                    return Juego::all()
+                    return Game::all()
                     ->where('id', "=", $id);
     
             } catch (QueryException $error) {
@@ -106,25 +106,25 @@ class JuegoController extends Controller
         }
 
         
-        //BORRAR JUEGOS//
-        public function deleteJuego($id){
+        //BORRAR GameS//
+        public function deleteGame($id){
 
             try {
-                $arrayJuego = Juego::all()
+                $arrayGame = Game::all()
                 ->where('id', '=', $id);
     
-                $Juego = Juego::where('id', '=', $id);
+                $Game = Game::where('id', '=', $id);
                 
-                if (count($arrayJuego) == 0) {
+                if (count($arrayGame) == 0) {
                     return response()->json([
-                        "data" => $arrayJuego,
-                        "message" => "No se ha encontrado el Juego"
+                        "data" => $arrayGame,
+                        "message" => "No se ha encontrado el Game"
                     ]);
                 }else{
-                    $Juego->delete();
+                    $Game->delete();
                     return response()->json([
-                        "data" => $arrayJuego,
-                        "message" => "Juego borrado correctamente"
+                        "data" => $arrayGame,
+                        "message" => "Game borrado correctamente"
                     ]);
                 }
     

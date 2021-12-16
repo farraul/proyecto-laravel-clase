@@ -10,12 +10,12 @@ class Party extends Model
     use HasFactory;
     
     protected $fillable = [
-        'nombre', 'idusuario', 'idjuego',
+        'nombre', 'idusuario', 'idgame',
 
     ];
-    public function juegos()
+    public function games()
     {
-        return $this->belongsTo(Juego::class);
+        return $this->belongsTo(Game::class);
     }
 
     public function usuarios()

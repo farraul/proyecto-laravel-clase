@@ -15,7 +15,7 @@ class PartyController extends Controller
         
         $nombre = $request->input('nombre');
         $idusuario = $request->input('idusuario');
-        $idjuego = $request->input('idjuego');
+        $idgame = $request->input('idgame');
         
 
         try {
@@ -24,7 +24,7 @@ class PartyController extends Controller
                 [
                     'nombre' => $nombre,
                     'idusuario' => $idusuario,
-                    'idjuego' => $idjuego,
+                    'idgame' => $idgame,
                 ]
             );
 
@@ -102,7 +102,7 @@ public function Deleteparty($id){
             
         $nombre = $request->input('nombre');
         $idusuario = $request->input('idusuario');
-        $idjuego = $request->input('idjuego');
+        $idgame = $request->input('idgame');
        
 
 
@@ -113,7 +113,7 @@ public function Deleteparty($id){
                 [
                     'nombre' => $nombre,
                     'idusuario' => $idusuario,
-                    'idjuego' => $idjuego,
+                    'idgame' => $idgame,
                    
                 ]
                 );
