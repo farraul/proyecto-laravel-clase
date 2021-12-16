@@ -8,7 +8,7 @@ use App\Models\Game;
 class GameController extends Controller
 
 {
-    //CREAR GameS//
+    //CREAR Game//
     public function createGame (Request $request){
 
         $nombre = $request->input('nombre');
@@ -37,7 +37,7 @@ class GameController extends Controller
            
         }
     }
-    //BUSCAR GameS POR ID//
+    //BUSCAR Games//
     public function showGameByID($id){
 
 
@@ -56,7 +56,7 @@ class GameController extends Controller
         
     }
     
-        //VER TODOS LOS GameS//
+        //VER TODOS LOS Games//
         public function showAllGame(){
     
             try {
@@ -68,7 +68,7 @@ class GameController extends Controller
             }
         }
 
-        //ACTUALIZAR GameS//
+        //ACTUALIZAR Games//
         public function updateGame (Request $request,$id){
 
            
@@ -106,7 +106,7 @@ class GameController extends Controller
         }
 
         
-        //BORRAR GameS//
+        //BORRAR Games//
         public function deleteGame($id){
 
             try {

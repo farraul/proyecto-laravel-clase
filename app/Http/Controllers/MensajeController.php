@@ -7,7 +7,7 @@ use App\Models\Mensaje;
 
 class MensajeController extends Controller
 {
-    //crear mensajes
+    //crear los mensajes
     public function createMensaje (Request $request){
 
         $idusuario = $request->input('idusuario');
@@ -37,7 +37,7 @@ class MensajeController extends Controller
            
         }
     }
-    //ver mensajes por id
+    //ver los mensajes por la id
     public function MensajebyID($id){
 
 

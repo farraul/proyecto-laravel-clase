@@ -19,7 +19,7 @@ class CreatePartiesTable extends Migration
             $table->string('nombre',100);
             // $table->string('idusuario',100);
           
-//////////////////Esto es para conectar con la id de games/////////////////////
+//////Esto es para conectar con la id de games///
             $table->unsignedInteger('idgame');
             $table->foreign('idgame')
             ->references('id')
@@ -28,8 +28,8 @@ class CreatePartiesTable extends Migration
             ->constrained('games')
             ->onUpdate('cascade')
             ->onDelete('cascade');
-
-//////////////////Esto es para conectar con la id de usuarios/////////////////////
+            
+////////Esto es para conectar con la id de usuarios////
             $table->unsignedInteger('idusuario');
             $table->foreign('idusuario')
             ->references('id')

@@ -25,7 +25,7 @@ class CreateMensajesTable extends Migration
             ->onDelete('cascade');
             $table->string('mensaje',200);
 
-            //////////////////Esto es para conectar con mensajes/////////////////////           
+
             $table->unsignedInteger('idparty');
             $table->foreign('idparty')
             ->references('id')
