@@ -26,7 +26,7 @@ Route::post('newUser', [AuthController::class, "userRegister"]);
 //login
 Route::post('loginUser', [AuthController::class, "userLogin"]);
 //midelware
-//Route::middleware('auth:api')->group(function(){
+Route::middleware('auth:api')->group(function(){
 //USUARIOS
 Route::get('Usuario', [UserController::class, "showAllUsuario"]);//
 Route::post('Usuario', [UserController::class, "addUsuarios"]);//
@@ -50,4 +50,4 @@ Route::post('Mensaje', [MensajeController::class, "createMensaje"]);//
 Route::delete('Mensaje/{id}', [MensajeController::class, "deleteMensaje"]);//
 Route::get('Mensaje/{id}', [MensajeController::class, "MensajebyID"]);//
 Route::get('Mensaje', [MensajeController::class, "showAllMensaje"]);//
-//});
+});
