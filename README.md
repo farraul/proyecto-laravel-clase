@@ -8,6 +8,12 @@
 </p>
 
 
+### CRUD Login y Register
+| Funcionalidad | Método | URL |
+| :---         |    :---         |   :---   |
+| Registrarse   |POST    | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/newUser    |
+| LOgin  | POST  | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/loginUser    | 
+
 ### CRUD Usuarios
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
@@ -17,11 +23,32 @@
 | Borrar usuario por ID  | DELETE   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     | 
 | Actualizar usuario por ID  | PUT   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     | 
 
-### CRUD LOGIN/REGISTER
+### CRUD Mensajes
 | Funcionalidad | Método | URL |
 | :---         |    :---         |   :---   |
-| Registrarse   |POST    | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/newUser    |
-| LOgin  | POST  | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/loginUser    | 
+| Añadir mensaje:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Mensaje    |
+| Buscar todos los mensajes | GET   | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Mensaje/     | 
+| Buscar mensaje por ID   | GET   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     |
+| Borrar mensaje por ID  | DELETE   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Usuario/11     | 
+
+### CRUD Juegos
+| Funcionalidad | Método | URL |
+| :---         |    :---         |   :---   |
+| Añadir juego:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game  |
+| Buscar todos los juegos | GET   | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game    | 
+| Buscar juego por ID   | GET   |https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game/11     |
+| Borrar juego por ID  | DELETE   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game/11     | 
+| Actualizar juego por ID  | PUT   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Game/11    | 
+
+### CRUD Partida
+| Funcionalidad | Método | URL |
+| :---         |    :---         |   :---   |
+| Añadir juego:   |POST    |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Party  |
+| Buscar todos los juegos | GET   |https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Party  | 
+| Buscar juego por ID   | GET   |https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Party/5   |
+| Borrar juego por ID  | DELETE   | https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Party/5  | 
+| Actualizar juego por ID  | PUT   |  https://r-f-geeks-laravel-and-passport.herokuapp.com/api/Party/5   | 
+
  
 
 ## TABLAS
