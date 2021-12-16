@@ -64,7 +64,8 @@
 
 ![image](https://user-images.githubusercontent.com/28491001/146386220-4cc04913-34a5-4ef2-99e0-4db6d4531040.png)
 
-HEROKU
+### HEROKU
+
 La API la tenemos en el siguiente enlace:
 https://r-f-geeks-laravel-and-passport.herokuapp.com
 
